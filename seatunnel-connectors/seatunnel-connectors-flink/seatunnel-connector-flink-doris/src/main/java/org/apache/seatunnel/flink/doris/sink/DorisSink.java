@@ -132,6 +132,6 @@ public class DorisSink implements FlinkStreamSink, FlinkBatchSink {
             int parallelism = config.getInt(PARALLELISM);
             rowDataStreamSink.setParallelism(parallelism);
         }
-        return null;
+        return rowDataStreamSink;
     }
 }
